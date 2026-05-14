@@ -75,6 +75,14 @@
 
   "REVIEW N TEXT":        "",
   "REVIEWER N NAME":      "",
+  "PROGRAM NAME":         "",
+  "AGE RANGE":            "",
+  "EXPERIENCE LEVEL":     "",
+  "I":                    "",
+  "REVIEW 2 TEXT":        "",
+  "REVIEW 3 TEXT":        "",
+  "REVIEW 4 TEXT":        "",
+  "REVIEW 5 TEXT":        "",
 
   "R1 INITIAL":           "B",
   "R2 INITIAL":           "A",
