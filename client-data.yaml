@@ -18,7 +18,7 @@ SECONDARY_COLOR: "#0066cc"
 LOGO_IMAGE: brand_assets/logo.png
 FACEBOOK_URL: https://www.facebook.com/camalandcruz
 INSTAGRAM_URL: https://www.instagram.com/camalandcruz
-HERO_IMAGE: images/hero-real.jpg
+HERO_IMAGE: images/hero/hero-real.jpg
 HERO_HEADLINE: "Totowa&#x2019;s Premier Judo &amp; Brazilian Jiu Jitsu Academy"
 HERO_SUBHEADLINE: "Train Under One of Renzo Gracie&#x2019;s First American Black Belts"
 HERO_SUBTEXT: "Reserve your free trial class &#x2014; all ages and levels welcome, no experience needed."
@@ -47,7 +47,7 @@ PROGRAM_5_AUDIENCE_KIDS: "1"
 
 PROGRAM_1_NAME: "Kids Jiu Jitsu &amp; Judo"
 # PLACEHOLDER — replace with client photo of kids class.
-PROGRAM_1_PHOTO: images/kids-instructors.jpg
+PROGRAM_1_PHOTO: images/programs/program-1/kids-instructors.jpg
 PROGRAM_1_AGE_RANGE: "Ages 5–12"
 PROGRAM_1_DAYS: "Tue &amp; Thu"
 PROGRAM_1_SESSION_LEN: "60-min classes"
@@ -55,7 +55,7 @@ PROGRAM_1_DESCRIPTION: "A combined Jiu Jitsu and Judo program that builds real g
 
 PROGRAM_2_NAME: "Kids Self Defense"
 # PLACEHOLDER — replace with client photo of kids self-defense class.
-PROGRAM_2_PHOTO: images/kids-mats.jpg
+PROGRAM_2_PHOTO: images/programs/program-2/kids-mats.jpg
 PROGRAM_2_AGE_RANGE: "All Ages"
 PROGRAM_2_DAYS: "Mon, Wed &amp; Thu"
 PROGRAM_2_SESSION_LEN: "60-min classes"
@@ -63,7 +63,7 @@ PROGRAM_2_DESCRIPTION: "Practical, real-world self-defense for children. Kids le
 
 PROGRAM_3_NAME: "Adult Brazilian Jiu Jitsu"
 # PLACEHOLDER — replace with client photo of adult BJJ class.
-PROGRAM_3_PHOTO: images/group-instructors.jpg
+PROGRAM_3_PHOTO: images/programs/program-3/group-instructors.jpg
 PROGRAM_3_AGE_RANGE: "Adults All Levels"
 PROGRAM_3_DAYS: "7 days a week"
 PROGRAM_3_SESSION_LEN: "60–90 min classes"
@@ -71,7 +71,7 @@ PROGRAM_3_DESCRIPTION: "Train Gi and No-Gi under Professor Jamie Cruz &#x2014; o
 
 PROGRAM_4_NAME: "Adult Judo"
 # PLACEHOLDER — replace with client photo of judo class.
-PROGRAM_4_PHOTO: images/about-photo.jpg
+PROGRAM_4_PHOTO: images/programs/program-4/about-photo.jpg
 PROGRAM_4_AGE_RANGE: "Adults All Levels"
 PROGRAM_4_DAYS: "Tue, Thu &amp; Sat"
 PROGRAM_4_SESSION_LEN: "60–90 min classes"
@@ -79,7 +79,7 @@ PROGRAM_4_DESCRIPTION: "Olympic-lineage Judo instruction. From beginners learnin
 
 PROGRAM_5_NAME: "CRAWL: Toddler Martial Arts"
 # PLACEHOLDER — replace with client photo of CRAWL toddler class.
-PROGRAM_5_PHOTO: images/crawl-kids.jpg
+PROGRAM_5_PHOTO: images/programs/program-5/crawl-kids.jpg
 PROGRAM_5_AGE_RANGE: "Ages 2–4"
 PROGRAM_5_DAYS: "Wed &amp; Sat"
 PROGRAM_5_SESSION_LEN: "45-min sessions"
