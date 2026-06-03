@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quick Tour | [SCHOOL NAME] Martial Arts in [CITY]</title>
-  <meta name="description" content="Take a virtual tour of [SCHOOL NAME] — our mats, facility, and community in [CITY].">
+  <title>Quick Tour | [SCHOOL_NAME] Martial Arts in [CITY]</title>
+  <meta name="description" content="Take a virtual tour of [SCHOOL_NAME] — our mats, facility, and community in [CITY].">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;font-size:16px}
@@ -14,7 +14,12 @@
     button{cursor:pointer;border:none;outline:none;font-family:inherit}
     ul{list-style:none}
     :root{
-      --blue:#2563eb;--blue-dark:#1d4ed8;--blue-light:#eff6ff;
+      --primary:        [PRIMARY_COLOR];
+      --primary-dark:   color-mix(in srgb, [PRIMARY_COLOR] 80%, black);
+      --secondary:      [SECONDARY_COLOR];
+      --secondary-dark: color-mix(in srgb, [SECONDARY_COLOR] 80%, black);
+      --secondary-light:color-mix(in srgb, [SECONDARY_COLOR] 15%, white);
+      --red:var(--primary);--red-dark:var(--primary-dark);--blue:var(--secondary);--blue-dark:var(--secondary-dark);--blue-light:var(--secondary-light);
       --dark:#0f172a;--dark-2:#1e293b;--gray:#64748b;
       --gray-light:#e2e8f0;--light:#f8fafc;--white:#ffffff;
       --radius:8px;--radius-lg:12px;
@@ -23,8 +28,8 @@
     }
     .container{max-width:1200px;margin:0 auto;padding:0 24px}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border-radius:var(--radius);font-size:16px;font-weight:700;text-align:center;transition:var(--transition);cursor:pointer;white-space:nowrap}
-    .btn-primary{background:var(--blue);color:var(--white);border:2px solid var(--blue)}
-    .btn-primary:hover{background:var(--blue-dark);border-color:var(--blue-dark);transform:translateY(-2px);box-shadow:var(--shadow)}
+    .btn-primary{background:var(--red);color:var(--white);border:2px solid var(--red)}
+    .btn-primary:hover{background:var(--red-dark);border-color:var(--red-dark);transform:translateY(-2px);box-shadow:var(--shadow)}
     /* ── Header ── */
     #header{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--white);box-shadow:0 2px 20px rgba(0,0,0,.07);transition:box-shadow .3s}
     .header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
@@ -158,20 +163,23 @@
 <header id="header">
   <div class="container">
     <div class="header-inner">
-      <a href="index.html" class="logo" aria-label="[SCHOOL NAME] Home">
-        <div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L20 8.5v7l-8 4-8-4v-7l8-4.32z"/></svg></div>
-        [SCHOOL NAME]
+      <a href="index.html" class="logo" aria-label="[SCHOOL_NAME] Home">
+        <img src="[LOGO_IMAGE]" alt="[SCHOOL_NAME]" height="48" style="height:48px;width:auto;display:block">
       </a>
       <nav id="main-nav" role="navigation" aria-label="Main navigation">
         <a href="#" onclick="openModal('modal-kit');return false">Pricing</a>
         <div class="nav-dropdown">
           <a href="programs.html">Programs</a>
           <div class="dropdown-menu">
-            <a href="program-1.html">[PROGRAM 1 NAME]</a>
-            <a href="program-2.html">[PROGRAM 2 NAME]</a>
-            <a href="program-3.html"></a>
-            <a href="program-4.html"></a>
-            <a href="program-5.html"></a>
+            <a href="program-1.html">[PROGRAM_1_NAME]</a>
+            <a href="program-2.html">[PROGRAM_2_NAME]</a>
+            <!-- [IF:PROGRAM_3_NAME] --><a href="program-3.html">[PROGRAM_3_NAME]</a><!-- [/IF:PROGRAM_3_NAME] -->
+
+            <!-- [IF:PROGRAM_4_NAME] --><a href="program-4.html">[PROGRAM_4_NAME]</a><!-- [/IF:PROGRAM_4_NAME] -->
+
+            <!-- [IF:PROGRAM_5_NAME] --><a href="program-5.html">[PROGRAM_5_NAME]</a><!-- [/IF:PROGRAM_5_NAME] -->
+
+            <!-- [IF:PROGRAM_6_NAME] --><a href="program-6.html">[PROGRAM_6_NAME]</a><!-- [/IF:PROGRAM_6_NAME] -->
           </div>
         </div>
         <a href="quick-tour.html">Quick Tour</a>
@@ -194,89 +202,27 @@
 <section class="tour-hero">
   <div class="tour-hero-grid">
     <div class="tour-hero-text reveal">
-      <h1>Quick Tour of [SCHOOL NAME]</h1>
-      <p>[SCHOOL NAME] is [CITY]'s most welcoming martial arts school. Our facility features professional-grade training mats, a dedicated kids area, and a community that feels like family. Come see what [YEARS_COUNT] years of serving [CITY] looks like from the inside.</p>
+      <h1>Quick Tour of [SCHOOL_NAME]</h1>
+      <p>[SCHOOL_NAME] is [CITY]'s most welcoming martial arts school. Our facility features professional-grade training mats, a dedicated kids area, and a community that feels like family.<!-- [IF:YEARS_COUNT] --> Come see what [YEARS_COUNT] years of serving [CITY] looks like from the inside.<!-- [/IF:YEARS_COUNT] --></p>
       <button class="btn btn-primary" onclick="openModal('modal-trial')">Get Started — Free Intro Class</button>
     </div>
-    <div class="tour-hero-photo reveal">
-      <div style="height:360px;background:linear-gradient(135deg,#1a0000,#E91C00);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase">PHOTO COMING SOON</div>
-    </div>
+    <!-- [IF:QUICK_TOUR_HERO_IMAGE] --><div class="tour-hero-photo reveal">
+      <img src="[QUICK_TOUR_HERO_IMAGE]" alt="[SCHOOL_NAME] facility in [CITY]" loading="eager">
+    </div><!-- [/IF:QUICK_TOUR_HERO_IMAGE] -->
   </div>
 </section>
 
+<!-- [IF:QUICK_TOUR_GALLERY] -->
 <section id="gallery">
   <div class="gallery-grid">
-
-    <div class="gallery-item reveal">
-      <div class="gallery-photo alt1">Photo coming soon</div>
-      <div class="gallery-caption">
-        <h3>Main Training Mat</h3>
-        <p>Our professional-grade mats in [CITY] give students plenty of room to train, drill, and grow — in a clean, well-maintained facility.</p>
-      </div>
-    </div>
-
-    <div class="gallery-item reveal">
-      <div class="gallery-photo alt2">Photo coming soon</div>
-      <div class="gallery-caption">
-        <h3>Kids Training Area</h3>
-        <p>Our kids classes are age-appropriate, high-energy, and fully supervised. Children ages 4–12 love every minute on these mats.</p>
-      </div>
-    </div>
-
-    <div class="gallery-item reveal">
-      <div class="gallery-photo alt3">Photo coming soon</div>
-      <div class="gallery-caption">
-        <h3>[SCHOOL NAME] Location</h3>
-        <p>Conveniently located at [ADDRESS LINE 1], [CITY]. Easy parking and a welcoming entrance for students of all ages.</p>
-      </div>
-    </div>
-
-    <div class="gallery-item reveal">
-      <div class="gallery-photo alt4">Photo coming soon</div>
-      <div class="gallery-caption">
-        <h3>Adult Training Floor</h3>
-        <p>The adult training floor is designed for serious [MARTIAL ART] practice. Teens and adults train here in a structured, focused environment.</p>
-      </div>
-    </div>
-
-    <div class="gallery-item reveal">
-      <div class="gallery-photo alt5">Photo coming soon</div>
-      <div class="gallery-caption">
-        <h3>Little Tigers in Action</h3>
-        <p>Our youngest students (ages 4–6) get their own age-appropriate instruction — learning listening, coordination, and the fundamentals of martial arts in a fun setting.</p>
-      </div>
-    </div>
-
-    <div class="gallery-item reveal">
-      <div class="gallery-photo alt1">Photo coming soon</div>
-      <div class="gallery-caption">
-        <h3>Expert Instruction</h3>
-        <p>Every class is led by a qualified instructor who holds students to real standards. No belts are handed out — they are earned through demonstrated mastery.</p>
-      </div>
-    </div>
-
-    <div class="gallery-item reveal">
-      <div class="gallery-photo alt2">Photo coming soon</div>
-      <div class="gallery-caption">
-        <h3>Class in Session</h3>
-        <p>This is what it's all about — students building confidence, strength, and discipline together under expert coaching. Come see it for yourself.</p>
-      </div>
-    </div>
-
-    <div class="gallery-item reveal">
-      <div class="gallery-photo alt3">Photo coming soon</div>
-      <div class="gallery-caption">
-        <h3>Our Community</h3>
-        <p>The friendships built on these mats last a lifetime. [SCHOOL NAME] isn't just a school — it's a family that supports each other on and off the mats.</p>
-      </div>
-    </div>
-
+[QUICK_TOUR_GALLERY]
   </div>
 </section>
+<!-- [/IF:QUICK_TOUR_GALLERY] -->
 
 <section class="tour-cta">
   <h2>Ready to See It In Person?</h2>
-  <p>A photo can only tell you so much. Book a free trial class and experience [SCHOOL NAME] for yourself.</p>
+  <p>A photo can only tell you so much. Book a free trial class and experience [SCHOOL_NAME] for yourself.</p>
   <div class="cta-pair">
     <button class="btn btn-primary" onclick="openModal('modal-trial')">Book Free Trial</button>
     <button class="btn btn-ghost" onclick="openModal('modal-kit')">Get Pricing &amp; Schedule</button>
@@ -286,11 +232,11 @@
 <footer id="footer">
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="logo" aria-label="[SCHOOL NAME] Home">
-        <div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L20 8.5v7l-8 4-8-4v-7l8-4.32z"/></svg></div>
-        [SCHOOL NAME]
+      <a href="index.html" class="logo" aria-label="[SCHOOL_NAME] Home">
+        <img src="[LOGO_IMAGE]" alt="[SCHOOL_NAME] logo" style="height:36px;width:auto" onerror="this.style.display='none'">
+        [SCHOOL_NAME]
       </a>
-      <p>[SCHOOL NAME] is [CITY]'s premier martial arts academy. We develop champions on and off the mats through world-class instruction and a supportive community.</p>
+      <p>[SCHOOL_NAME] is [CITY]'s premier martial arts academy. We develop champions on and off the mats through world-class instruction and a supportive community.</p>
       <div class="social-links" aria-label="Social media links">
         <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
         <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
@@ -301,11 +247,15 @@
     <div class="footer-col">
       <h4>Programs</h4>
       <ul>
-        <li><a href="program-1.html">[PROGRAM 1 NAME]</a></li>
-        <li><a href="program-2.html">[PROGRAM 2 NAME]</a></li>
-        <li><a href="program-3.html"></a></li>
-        <li><a href="program-4.html"></a></li>
-        <li><a href="program-5.html"></a></li>
+        <li><a href="program-1.html">[PROGRAM_1_NAME]</a></li>
+        <li><a href="program-2.html">[PROGRAM_2_NAME]</a></li>
+        <!-- [IF:PROGRAM_3_NAME] --><li><a href="program-3.html">[PROGRAM_3_NAME]</a></li><!-- [/IF:PROGRAM_3_NAME] -->
+
+        <!-- [IF:PROGRAM_4_NAME] --><li><a href="program-4.html">[PROGRAM_4_NAME]</a></li><!-- [/IF:PROGRAM_4_NAME] -->
+
+        <!-- [IF:PROGRAM_5_NAME] --><li><a href="program-5.html">[PROGRAM_5_NAME]</a></li><!-- [/IF:PROGRAM_5_NAME] -->
+
+        <!-- [IF:PROGRAM_6_NAME] --><li><a href="program-6.html">[PROGRAM_6_NAME]</a></li><!-- [/IF:PROGRAM_6_NAME] -->
       </ul>
     </div>
     <div class="footer-col">
@@ -324,15 +274,15 @@
     <div class="footer-col">
       <h4>Contact Us</h4>
       <address style="font-style:normal">
-        <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>[ADDRESS LINE 1]<br>[CITY], [STATE] [ZIP]</div>
+        <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>[ADDRESS_LINE_1]<br>[CITY], [STATE] [ZIP]</div>
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><a href="tel:[PHONE]">[PHONE]</a></div>
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:[EMAIL]">[EMAIL]</a></div>
-        <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>[HOURS]</div>
+        <!-- [IF:HOURS_SHORT] --><div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>[HOURS_SHORT]</div><!-- [/IF:HOURS_SHORT] -->
       </address>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© [YEAR FOUNDED] [SCHOOL NAME]. All rights reserved.</p>
+    <p>© [CURRENT_YEAR] [SCHOOL_NAME]. All rights reserved.</p>
     <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div>
   </div>
 </footer>
@@ -349,7 +299,7 @@
         <div class="field"><label for="tr-email">Email</label><input id="tr-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
         <div class="field"><label for="tr-phone">Phone</label><input id="tr-phone" type="tel" name="phone" placeholder="(555) 555-5555" required autocomplete="tel"></div>
         <div class="field"><label for="tr-program">Program</label><select id="tr-program" name="program"><option value="" disabled selected>Select a program…</option><option value="kids">Kids</option><option value="teens-adults">Teens &amp; Adults</option><option value="not-sure">Not Sure</option></select></div>
-        <p class="modal-consent">By submitting you agree to receive SMS messages from [SCHOOL NAME]. Reply STOP to unsubscribe. Msg &amp; data rates may apply. <a href="#">Privacy Policy</a>.</p>
+        <p class="modal-consent">By submitting you agree to receive SMS messages from [SCHOOL_NAME]. Reply STOP to unsubscribe. Msg &amp; data rates may apply. <a href="#">Privacy Policy</a>.</p>
         <button type="submit" class="modal-submit">Reserve My Free Trial →</button>
       </form>
     </div>
@@ -369,7 +319,7 @@
         <div class="field"><label for="kit-email">Email</label><input id="kit-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
         <div class="field"><label for="kit-phone">Phone</label><input id="kit-phone" type="tel" name="phone" placeholder="(555) 555-5555" required autocomplete="tel"></div>
         <div class="field"><label for="kit-program">Program</label><select id="kit-program" name="program"><option value="" disabled selected>Select a program…</option><option value="kids">Kids</option><option value="teens-adults">Teens &amp; Adults</option><option value="not-sure">Not Sure</option></select></div>
-        <p class="modal-consent">By submitting you agree to receive SMS messages from [SCHOOL NAME]. Reply STOP to unsubscribe. Msg &amp; data rates may apply. <a href="#">Privacy Policy</a>.</p>
+        <p class="modal-consent">By submitting you agree to receive SMS messages from [SCHOOL_NAME]. Reply STOP to unsubscribe. Msg &amp; data rates may apply. <a href="#">Privacy Policy</a>.</p>
         <button type="submit" class="modal-submit">Send Me The Info →</button>
       </form>
     </div>

@@ -1,0 +1,141 @@
+SLUG: camal-and-cruz-totowa
+SCHOOL_NAME: "Camal &amp; Cruz Judo &amp; Jiu Jitsu"
+MARTIAL_ART: "Judo &amp; Jiu Jitsu"
+SITE_URL: https://camal-and-cruz.pages.dev
+DOMAIN: camal-and-cruz.pages.dev
+CITY: Totowa
+STATE: NJ
+ZIP: "07512"
+ADDRESS_LINE_1: "266 Union Blvd"
+PHONE: "(973) 256-0110"
+EMAIL: info@camalandcruz.com
+HOURS: "Mon–Sun (see full schedule)"
+HOURS_SHORT: "Mon–Sun"
+YEAR_FOUNDED: "1996"
+# NOTE: YEARS_COUNT is computed automatically from YEAR_FOUNDED — do NOT set manually.
+PRIMARY_COLOR: "#cc0000"
+SECONDARY_COLOR: "#0066cc"
+LOGO_IMAGE: brand_assets/logo.png
+FACEBOOK_URL: https://www.facebook.com/camalandcruz
+INSTAGRAM_URL: https://www.instagram.com/camalandcruz
+HERO_IMAGE: images/hero-real.jpg
+HERO_HEADLINE: "Totowa&#x2019;s Premier Judo &amp; Brazilian Jiu Jitsu Academy"
+HERO_SUBHEADLINE: "Train Under One of Renzo Gracie&#x2019;s First American Black Belts"
+HERO_SUBTEXT: "Reserve your free trial class &#x2014; all ages and levels welcome, no experience needed."
+STAR_RATING: "4.9"
+REVIEW_COUNT: "71"
+ABOUT_TEXT: "Camal &amp; Cruz Judo &amp; Jiu Jitsu has been a cornerstone of the Totowa community since 1996. Founded by Sensei Tony Camal and Professor Jamie Cruz, our academy has spent nearly 30 years developing confident, disciplined, and skilled martial artists across northern New Jersey. We teach authentic Judo and Brazilian Jiu Jitsu in a welcoming environment that serves kids, teens, and adults at every level of experience."
+
+# ── Instructors ──────────────────────────────────────────────────────────────
+INSTRUCTOR_1_NAME: "Jamie Cruz"
+INSTRUCTOR_1_PHOTO: images/instructor/jamie-cruz.png
+INSTRUCTOR_1_TITLE: "Head Instructor &amp; Owner, 4th Degree BJJ Black Belt"
+INSTRUCTOR_1_BIO: "Jamie Cruz began training Brazilian Jiu-Jitsu in 1994 under the legendary Renzo Gracie. By 2003, Renzo awarded Jamie his black belt &#x2014; making him just the 7th practitioner ever to receive a black belt from the acclaimed martial artist. Now a 4th Degree Black Belt, Jamie has trained UFC-caliber fighters including Jim Miller, Dan Miller, Charlie Brenneman, and Dillon Danis, and is one of the most respected instructors in New Jersey. His philosophy centers on building a framework of proven success for every student &#x2014; beginner to competitor."
+INSTRUCTOR_2_NAME: "Tony Camal"
+# Real professional headshot — downloaded from camalandcruz.com.
+# Client also mentioned a painted portrait photo is coming — swap this when received.
+INSTRUCTOR_2_PHOTO: images/instructor/tony-camal.png
+INSTRUCTOR_2_TITLE: "Co-Founder &amp; 6th Dan Judo Black Belt (1961&#x2013;2024)"
+INSTRUCTOR_2_BIO: "Anthony &#x201C;Tony&#x201D; Camal began his Judo journey in 1967 at age six, eventually becoming a Junior Olympic National Champion (1978), High School National Champion (1979), and three-time Senior National medalist. He opened Camal Judo in 1996, building it into one of New Jersey&#x2019;s most decorated Judo academies &#x2014; producing dozens of Junior National Champions, over 10 Senior National medal winners, and 30+ black belts. A career firefighter promoted to Captain, Tony was named USA Judo Amateur Coach of the Year by the U.S. Olympic Committee in 2014. Sensei Camal passed away on July 29, 2024. His legacy endures in every student he trained and in the academy that bears his name."
+
+# ── Programs ─────────────────────────────────────────────────────────────────
+PROGRAM_1_AUDIENCE_TEENS: "1"
+PROGRAM_2_AUDIENCE_TEENS: "1"
+PROGRAM_3_AUDIENCE_ADULTS: "1"
+PROGRAM_4_AUDIENCE_ADULTS: "1"
+PROGRAM_5_AUDIENCE_KIDS: "1"
+
+PROGRAM_1_NAME: "Kids Jiu Jitsu &amp; Judo"
+# PLACEHOLDER — replace with client photo of kids class.
+PROGRAM_1_PHOTO: images/kids-instructors.jpg
+PROGRAM_1_AGE_RANGE: "Ages 5–12"
+PROGRAM_1_DAYS: "Tue &amp; Thu"
+PROGRAM_1_SESSION_LEN: "60-min classes"
+PROGRAM_1_DESCRIPTION: "A combined Jiu Jitsu and Judo program that builds real grappling fundamentals, confidence, discipline, and self-defense skills in a fun, structured environment. Students earn every belt by demonstrating real technique &#x2014; nothing is handed out here."
+
+PROGRAM_2_NAME: "Kids Self Defense"
+# PLACEHOLDER — replace with client photo of kids self-defense class.
+PROGRAM_2_PHOTO: images/kids-mats.jpg
+PROGRAM_2_AGE_RANGE: "All Ages"
+PROGRAM_2_DAYS: "Mon, Wed &amp; Thu"
+PROGRAM_2_SESSION_LEN: "60-min classes"
+PROGRAM_2_DESCRIPTION: "Practical, real-world self-defense for children. Kids learn awareness, striking basics, conflict resolution, and how to stay safe &#x2014; with confidence, not fear. Available on a flexible scheduling basis."
+
+PROGRAM_3_NAME: "Adult Brazilian Jiu Jitsu"
+# PLACEHOLDER — replace with client photo of adult BJJ class.
+PROGRAM_3_PHOTO: images/group-instructors.jpg
+PROGRAM_3_AGE_RANGE: "Adults All Levels"
+PROGRAM_3_DAYS: "7 days a week"
+PROGRAM_3_SESSION_LEN: "60–90 min classes"
+PROGRAM_3_DESCRIPTION: "Train Gi and No-Gi under Professor Jamie Cruz &#x2014; one of Renzo Gracie&#x2019;s first American Black Belts. Classes 7 days a week including early bird sessions. Whether you&#x2019;re a complete beginner or a seasoned practitioner, Camal &amp; Cruz is where serious BJJ lives in New Jersey."
+
+PROGRAM_4_NAME: "Adult Judo"
+# PLACEHOLDER — replace with client photo of judo class.
+PROGRAM_4_PHOTO: images/about-photo.jpg
+PROGRAM_4_AGE_RANGE: "Adults All Levels"
+PROGRAM_4_DAYS: "Tue, Thu &amp; Sat"
+PROGRAM_4_SESSION_LEN: "60–90 min classes"
+PROGRAM_4_DESCRIPTION: "Olympic-lineage Judo instruction. From beginners learning their first throws to competitive students chasing tournament wins &#x2014; a structured, technically rigorous path for every level. One of the few academies in New Jersey offering dedicated adult Judo classes seven days a week."
+
+PROGRAM_5_NAME: "CRAWL: Toddler Martial Arts"
+# PLACEHOLDER — replace with client photo of CRAWL toddler class.
+PROGRAM_5_PHOTO: images/crawl-kids.jpg
+PROGRAM_5_AGE_RANGE: "Ages 2–4"
+PROGRAM_5_DAYS: "Wed &amp; Sat"
+PROGRAM_5_SESSION_LEN: "45-min sessions"
+PROGRAM_5_DESCRIPTION: "CRAWL stands for Confidence, Respect, Awareness, Willpower, and Leadership. A unique parent-led toddler program that builds character and coordination through fun, age-appropriate martial arts activities. The perfect first step into the martial arts world."
+
+# ── Schedule ─────────────────────────────────────────────────────────────────
+# NOTE: Kids JJ/Judo and Kids Self Defense times are confirmed from existing schedule.
+# Adult BJJ, Adult Judo, and CRAWL times are unconfirmed — marked TBD. Verify with client before launch.
+CLASS_SCHEDULE_HTML: "<table class=\"sched\" role=\"table\" aria-label=\"Weekly class schedule\"><thead><tr><th scope=\"col\">Program</th><th scope=\"col\">Monday</th><th scope=\"col\">Tuesday</th><th scope=\"col\">Wednesday</th><th scope=\"col\">Thursday</th><th scope=\"col\">Friday</th><th scope=\"col\">Saturday</th><th scope=\"col\">Sunday</th></tr></thead><tbody><tr><td>Kids Jiu Jitsu &amp; Judo<br><small style=\"color:#64748b\">Ages 5–12</small></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-slot kids\">6:00pm – 7:00pm</span></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-slot kids\">6:00pm – 7:00pm</span></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-slot kids\">9:00am – 10:00am</span></td><td><span class=\"time-empty\">—</span></td></tr><tr><td>Kids Self Defense<br><small style=\"color:#64748b\">All Ages</small></td><td><span class=\"time-slot kids\">6:00pm – 7:00pm</span></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-slot kids\">6:00pm – 7:00pm</span></td><td><span class=\"time-slot kids\">7:00pm – 8:00pm</span></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-empty\">—</span></td></tr><tr><td>Adult Brazilian Jiu Jitsu<br><small style=\"color:#64748b\">All Levels</small></td><td><span class=\"time-slot adult\">TBD</span></td><td><span class=\"time-slot adult\">TBD</span></td><td><span class=\"time-slot adult\">TBD</span></td><td><span class=\"time-slot adult\">TBD</span></td><td><span class=\"time-slot adult\">TBD</span></td><td><span class=\"time-slot adult\">TBD</span></td><td><span class=\"time-slot adult\">TBD</span></td></tr><tr><td>Adult Judo<br><small style=\"color:#64748b\">All Levels</small></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-slot adult\">TBD</span></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-slot adult\">TBD</span></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-slot adult\">TBD</span></td><td><span class=\"time-empty\">—</span></td></tr><tr><td>CRAWL: Toddler Martial Arts<br><small style=\"color:#64748b\">Ages 2–4</small></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-slot kids\">TBD</span></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-empty\">—</span></td><td><span class=\"time-slot kids\">TBD</span></td><td><span class=\"time-empty\">—</span></td></tr></tbody></table>"
+
+# ── Webhooks ─────────────────────────────────────────────────────────────────
+# NOTE: All webhook/calendar URLs below are PLACEHOLDER values — replace with actual GHL URLs before launch.
+TRIAL_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/trial
+STARTER_KIT_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/kit
+QUIZ_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/quiz
+FINAL_CTA_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/final
+BOOKING_CALENDAR_URL: https://api.leadconnectorhq.com/widget/group/CAMAL_PLACEHOLDER
+PRIVACY_POLICY_URL: https://camalandcruz.com/privacy-policy
+
+# ── Reviewers ────────────────────────────────────────────────────────────────
+REVIEWER_1_NAME: "Bchr Battlkar"
+REVIEWER_1_DATE: "a year ago"
+REVIEWER_1_TEXT: "Best school in NJ with Top Notch Instructors! Nothing given, everything earned! Professor Cruz is one of Renzo Gracie&#x2019;s first American Black Belts. He is also a gentleman and a Warrior!"
+
+REVIEWER_2_NAME: "Alecsis Pesantez"
+REVIEWER_2_DATE: "a year ago"
+REVIEWER_2_TEXT: "Training at Camal and Cruz changed my life and pushed me to a limit I never knew existed. Professor Cruz has an incredible knowledge of the fine details of Jiu Jitsu. Facility is clean and professional. Highly recommended for anyone to start their journey."
+
+REVIEWER_3_NAME: "Quentin DeMarco"
+REVIEWER_3_DATE: "a year ago"
+REVIEWER_3_TEXT: "Every experience at Cruz BJJ was outstanding. The facility is clean and the people are great to train with. Under the guidance of Jamie Cruz &#x2014; I give this place a 10/10 and highly recommend."
+
+REVIEWER_4_NAME: "Slater"
+REVIEWER_4_DATE: "a year ago"
+REVIEWER_4_TEXT: "Camal and Cruz is an incredible training environment that fosters both personal growth and camaraderie. Everyone was so welcoming and they definitely give you the work. Definitely recommend this gym."
+
+REVIEWER_5_NAME: "Johnathan Freeman"
+REVIEWER_5_DATE: "a year ago"
+REVIEWER_5_TEXT: "A must go to gym especially if you are in the middle of your journey and need a place to cross train. Professor Cruz is one of a kind and has so much insight into Jiu Jitsu. The entire coaching staff are welcoming and will push you to be your best."
+
+REVIEWER_6_NAME: "Jason C."
+REVIEWER_6_DATE: "a year ago"
+REVIEWER_6_TEXT: "It must have been at least 8+ years training here. This facility is an integral part of my family&#x2019;s lifestyle &#x2014; when we bought a home, being within daily distance was one of our top 5 criteria. The student&#x2019;s growth is put first and foremost. Open 7 days a week with Judo, BJJ, Wrestling, Muay Thai, and Karate."
+
+REVIEWER_7_NAME: "Gaetano Dimaggio"
+REVIEWER_7_DATE: "a year ago"
+REVIEWER_7_TEXT: "Jamie is an outstanding professor who cares about his students. This academy is world class. I am always amazed at the attention to detail and high skill level. Beginner Friendly &#x2014; this was my first BJJ Academy."
+
+REVIEWER_8_NAME: "Tommy Di Maggio"
+REVIEWER_8_DATE: "a year ago"
+REVIEWER_8_TEXT: "One of the best schools in the area! Jamie and all the guys there have an amazing game to offer and share. Every time I am there I learn something new. Thanks for giving back to the community."
+
+REVIEWER_9_NAME: "Raffi Naljayan"
+REVIEWER_9_DATE: "a year ago"
+REVIEWER_9_TEXT: "My daughter had zero athletic ability when she started and she has developed athleticism and a ton of confidence. The instruction is excellent and coaches truly care about every student&#x2019;s development."
+
+REVIEWER_10_NAME: "D.R."
+REVIEWER_10_DATE: "a year ago"
+REVIEWER_10_TEXT: "Amazing judo school, fantastic facility and incredible staff. Hopefully this is the start of a new, healthier and more disciplined life for my boys. They need at least a 20 star rating."

@@ -14,7 +14,12 @@
     button{cursor:pointer;border:none;outline:none;font-family:inherit}
     ul{list-style:none}
     :root{
-      --blue:#2563eb;--blue-dark:#1d4ed8;--blue-light:#eff6ff;
+      --primary:        #cc0000;
+      --primary-dark:   color-mix(in srgb, #cc0000 80%, black);
+      --secondary:      #0066cc;
+      --secondary-dark: color-mix(in srgb, #0066cc 80%, black);
+      --secondary-light:color-mix(in srgb, #0066cc 15%, white);
+      --red:var(--primary);--red-dark:var(--primary-dark);--blue:var(--secondary);--blue-dark:var(--secondary-dark);--blue-light:var(--secondary-light);
       --dark:#0f172a;--dark-2:#1e293b;--gray:#64748b;
       --gray-light:#e2e8f0;--light:#f8fafc;--white:#ffffff;
       --radius:8px;--radius-lg:12px;
@@ -23,8 +28,8 @@
     }
     .container{max-width:1200px;margin:0 auto;padding:0 24px}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border-radius:var(--radius);font-size:16px;font-weight:700;text-align:center;transition:var(--transition);cursor:pointer;white-space:nowrap}
-    .btn-primary{background:var(--blue);color:var(--white);border:2px solid var(--blue)}
-    .btn-primary:hover{background:var(--blue-dark);border-color:var(--blue-dark);transform:translateY(-2px);box-shadow:var(--shadow)}
+    .btn-primary{background:var(--red);color:var(--white);border:2px solid var(--red)}
+    .btn-primary:hover{background:var(--red-dark);border-color:var(--red-dark);transform:translateY(-2px);box-shadow:var(--shadow)}
     .btn-ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.7)}
     .btn-ghost:hover{background:var(--white);color:var(--dark);transform:translateY(-2px)}
     /* ── Header ── */
@@ -142,8 +147,7 @@
   <div class="container">
     <div class="header-inner">
       <a href="index.html" class="logo" aria-label="Camal &amp; Cruz Judo &amp; Jiu Jitsu Home">
-        <div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L20 8.5v7l-8 4-8-4v-7l8-4.32z"/></svg></div>
-        Camal &amp; Cruz Judo &amp; Jiu Jitsu
+        <img src="brand_assets/logo.png" alt="Camal &amp; Cruz Judo &amp; Jiu Jitsu" height="48" style="height:48px;width:auto;display:block">
       </a>
       <nav id="main-nav" role="navigation" aria-label="Main navigation">
         <a href="#" onclick="openModal('modal-kit');return false">Pricing</a>
@@ -152,9 +156,13 @@
           <div class="dropdown-menu">
             <a href="program-1.html">Kids Jiu Jitsu &amp; Judo</a>
             <a href="program-2.html">Kids Self Defense</a>
-            <a href="program-3.html"></a>
-            <a href="program-4.html"></a>
-            <a href="program-5.html"></a>
+            <a href="program-3.html">Adult Brazilian Jiu Jitsu</a>
+
+            <a href="program-4.html">Adult Judo</a>
+
+            <a href="program-5.html">CRAWL: Toddler Martial Arts</a>
+
+            
           </div>
         </div>
         <a href="quick-tour.html">Quick Tour</a>
@@ -195,120 +203,120 @@
     <article class="review-card reveal">
       <div class="review-header">
         <div class="reviewer-info">
-          <div class="reviewer-avatar" style="background:linear-gradient(135deg,##4285f4,#34a853)">B</div>
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#4285f4,#34a853)">B</div>
           <div><div class="reviewer-name">Bchr Battlkar</div><div class="review-date">a year ago</div></div>
         </div>
         <div class="review-stars">★★★★★</div>
       </div>
-      <p class="review-text">"Best school in NJ with Top Notch Instructors! Nothing given, everything earned! Professor Cruz is one of Renzo Gracies first American Black Belts. He is also a gentleman and a Warrior!"</p>
+      <p class="review-text">Best school in NJ with Top Notch Instructors! Nothing given, everything earned! Professor Cruz is one of Renzo Gracie&#x2019;s first American Black Belts. He is also a gentleman and a Warrior!</p>
       <p class="via-google">via Google</p>
     </article>
 
     <article class="review-card reveal">
       <div class="review-header">
         <div class="reviewer-info">
-          <div class="reviewer-avatar" style="background:linear-gradient(135deg,##ea4335,#fbbc04)">A</div>
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#ea4335,#fbbc04)">A</div>
           <div><div class="reviewer-name">Alecsis Pesantez</div><div class="review-date">a year ago</div></div>
         </div>
         <div class="review-stars">★★★★★</div>
       </div>
-      <p class="review-text">"Training at Camal and Cruz changed my life and pushed me to a limit I never knew existed. Professor Cruz has an incredible knowledge of the fine details of Jiu Jitsu. Facility is clean and professional. Highly recommended for anyone to start their journey."</p>
+      <p class="review-text">Training at Camal and Cruz changed my life and pushed me to a limit I never knew existed. Professor Cruz has an incredible knowledge of the fine details of Jiu Jitsu. Facility is clean and professional. Highly recommended for anyone to start their journey.</p>
       <p class="via-google">via Google</p>
     </article>
 
     <article class="review-card reveal">
       <div class="review-header">
         <div class="reviewer-info">
-          <div class="reviewer-avatar" style="background:linear-gradient(135deg,##34a853,#1a73e8)">Q</div>
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#34a853,#1a73e8)">Q</div>
           <div><div class="reviewer-name">Quentin DeMarco</div><div class="review-date">a year ago</div></div>
         </div>
         <div class="review-stars">★★★★★</div>
       </div>
-      <p class="review-text">"Every experience at Cruz BJJ was outstanding. The facility is clean and the people are great to train with. Under the guidance of Jamie Cruz &#x2014; I give this place a 10/10 and highly recommend."</p>
+      <p class="review-text">Every experience at Cruz BJJ was outstanding. The facility is clean and the people are great to train with. Under the guidance of Jamie Cruz &#x2014; I give this place a 10/10 and highly recommend.</p>
       <p class="via-google">via Google</p>
     </article>
 
     <article class="review-card reveal">
       <div class="review-header">
         <div class="reviewer-info">
-          <div class="reviewer-avatar" style="background:linear-gradient(135deg,##fbbc04,#ea4335)">S</div>
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#fbbc04,#ea4335)">S</div>
           <div><div class="reviewer-name">Slater</div><div class="review-date">a year ago</div></div>
         </div>
         <div class="review-stars">★★★★★</div>
       </div>
-      <p class="review-text">"Camal and Cruz is an incredible training environment that fosters both personal growth and camaraderie. Everyone was so welcoming and they definitely give you the work. Definitely recommend this gym."</p>
+      <p class="review-text">Camal and Cruz is an incredible training environment that fosters both personal growth and camaraderie. Everyone was so welcoming and they definitely give you the work. Definitely recommend this gym.</p>
       <p class="via-google">via Google</p>
     </article>
 
     <article class="review-card reveal">
       <div class="review-header">
         <div class="reviewer-info">
-          <div class="reviewer-avatar" style="background:linear-gradient(135deg,##1a73e8,#34a853)">J</div>
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#1a73e8,#34a853)">J</div>
           <div><div class="reviewer-name">Johnathan Freeman</div><div class="review-date">a year ago</div></div>
         </div>
         <div class="review-stars">★★★★★</div>
       </div>
-      <p class="review-text">"A must go to gym especially if you are in the middle of your journey and need a place to cross train. Professor Cruz is one of a kind and has so much insight into Jiu Jitsu. The entire coaching staff are welcoming and will push you to be your best."</p>
+      <p class="review-text">A must go to gym especially if you are in the middle of your journey and need a place to cross train. Professor Cruz is one of a kind and has so much insight into Jiu Jitsu. The entire coaching staff are welcoming and will push you to be your best.</p>
       <p class="via-google">via Google</p>
     </article>
 
     <article class="review-card reveal">
       <div class="review-header">
         <div class="reviewer-info">
-          <div class="reviewer-avatar" style="background:linear-gradient(135deg,##4285f4,#ea4335)">J</div>
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#4285f4,#ea4335)">J</div>
           <div><div class="reviewer-name">Jason C.</div><div class="review-date">a year ago</div></div>
         </div>
         <div class="review-stars">★★★★★</div>
       </div>
-      <p class="review-text">"It must have been at least 8+ years training here. This facility is an integral part of my family&#x2019;s lifestyle &#x2014; when we bought a home, being within daily distance was one of our top 5 criteria. The student&#x2019;s growth is put first and foremost. Open 7 days a week with Judo, BJJ, Wrestling, Muay Thai, and Karate."</p>
+      <p class="review-text">It must have been at least 8+ years training here. This facility is an integral part of my family&#x2019;s lifestyle &#x2014; when we bought a home, being within daily distance was one of our top 5 criteria. The student&#x2019;s growth is put first and foremost. Open 7 days a week with Judo, BJJ, Wrestling, Muay Thai, and Karate.</p>
       <p class="via-google">via Google</p>
     </article>
 
     <article class="review-card reveal">
       <div class="review-header">
         <div class="reviewer-info">
-          <div class="reviewer-avatar" style="background:linear-gradient(135deg,##34a853,#fbbc04)">G</div>
-          <div><div class="reviewer-name">gaetano dimaggio</div><div class="review-date">a year ago</div></div>
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#34a853,#fbbc04)">G</div>
+          <div><div class="reviewer-name">Gaetano Dimaggio</div><div class="review-date">a year ago</div></div>
         </div>
         <div class="review-stars">★★★★★</div>
       </div>
-      <p class="review-text">"Jamie is an outstanding professor who cares about his students. This academy is world class. I am always amazed at the attention to detail and high skill level. Beginner Friendly &#x2014; this was my first BJJ Academy."</p>
+      <p class="review-text">Jamie is an outstanding professor who cares about his students. This academy is world class. I am always amazed at the attention to detail and high skill level. Beginner Friendly &#x2014; this was my first BJJ Academy.</p>
       <p class="via-google">via Google</p>
     </article>
 
     <article class="review-card reveal">
       <div class="review-header">
         <div class="reviewer-info">
-          <div class="reviewer-avatar" style="background:linear-gradient(135deg,##ea4335,#4285f4)">T</div>
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#ea4335,#4285f4)">T</div>
           <div><div class="reviewer-name">Tommy Di Maggio</div><div class="review-date">a year ago</div></div>
         </div>
         <div class="review-stars">★★★★★</div>
       </div>
-      <p class="review-text">"One of the best schools in the area! Jamie and all the guys there have an amazing game to offer and share. Every time I am there I learn something new. Thanks for giving back to the community."</p>
+      <p class="review-text">One of the best schools in the area! Jamie and all the guys there have an amazing game to offer and share. Every time I am there I learn something new. Thanks for giving back to the community.</p>
       <p class="via-google">via Google</p>
     </article>
 
     <article class="review-card reveal">
       <div class="review-header">
         <div class="reviewer-info">
-          <div class="reviewer-avatar" style="background:linear-gradient(135deg,##7c3aed,#2563eb)">R</div>
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#7c3aed,#2563eb)">R</div>
           <div><div class="reviewer-name">Raffi Naljayan</div><div class="review-date">a year ago</div></div>
         </div>
         <div class="review-stars">★★★★★</div>
       </div>
-      <p class="review-text">"My daughter had zero athletic ability when she started and she has developed athleticism and a ton of confidence. The instruction is excellent and coaches truly care about every student&#x2019;s development."</p>
+      <p class="review-text">My daughter had zero athletic ability when she started and she has developed athleticism and a ton of confidence. The instruction is excellent and coaches truly care about every student&#x2019;s development.</p>
       <p class="via-google">via Google</p>
     </article>
 
     <article class="review-card reveal">
       <div class="review-header">
         <div class="reviewer-info">
-          <div class="reviewer-avatar" style="background:linear-gradient(135deg,##065f46,#0d9488)">D</div>
+          <div class="reviewer-avatar" style="background:linear-gradient(135deg,#065f46,#0d9488)">D</div>
           <div><div class="reviewer-name">D.R.</div><div class="review-date">a year ago</div></div>
         </div>
         <div class="review-stars">★★★★★</div>
       </div>
-      <p class="review-text">"Amazing judo school, fantastic facility and incredible staff. Hopefully this is the start of a new, healthier and more disciplined life for my boys. They need at least a 20 star rating."</p>
+      <p class="review-text">Amazing judo school, fantastic facility and incredible staff. Hopefully this is the start of a new, healthier and more disciplined life for my boys. They need at least a 20 star rating.</p>
       <p class="via-google">via Google</p>
     </article>
 
@@ -328,7 +336,7 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="index.html" class="logo" aria-label="Camal &amp; Cruz Judo &amp; Jiu Jitsu Home">
-        <div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L20 8.5v7l-8 4-8-4v-7l8-4.32z"/></svg></div>
+        <img src="brand_assets/logo.png" alt="Camal &amp; Cruz Judo &amp; Jiu Jitsu logo" style="height:36px;width:auto" onerror="this.style.display='none'">
         Camal &amp; Cruz Judo &amp; Jiu Jitsu
       </a>
       <p>Camal &amp; Cruz Judo &amp; Jiu Jitsu is Totowa's premier martial arts academy. We develop champions on and off the mats through world-class instruction and a supportive community.</p>
@@ -344,9 +352,13 @@
       <ul>
         <li><a href="program-1.html">Kids Jiu Jitsu &amp; Judo</a></li>
         <li><a href="program-2.html">Kids Self Defense</a></li>
-        <li><a href="program-3.html"></a></li>
-        <li><a href="program-4.html"></a></li>
-        <li><a href="program-5.html"></a></li>
+        <li><a href="program-3.html">Adult Brazilian Jiu Jitsu</a></li>
+
+        <li><a href="program-4.html">Adult Judo</a></li>
+
+        <li><a href="program-5.html">CRAWL: Toddler Martial Arts</a></li>
+
+        
       </ul>
     </div>
     <div class="footer-col">
@@ -368,12 +380,12 @@
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>266 Union Blvd<br>Totowa, NJ 07512</div>
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><a href="tel:(973) 256-0110">(973) 256-0110</a></div>
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:info@camalandcruz.com">info@camalandcruz.com</a></div>
-        <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>Mon–Sun (see full schedule)</div>
+        <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>Mon–Sun</div>
       </address>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 1996 Camal &amp; Cruz Judo &amp; Jiu Jitsu. All rights reserved.</p>
+    <p>© 2026 Camal &amp; Cruz Judo &amp; Jiu Jitsu. All rights reserved.</p>
     <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div>
   </div>
 </footer>
@@ -385,7 +397,7 @@
     <div id="modal-trial-body">
       <h2 class="modal-title" id="title-trial">Book Your Free Trial Today</h2>
       <p class="modal-sub">No commitment. No experience needed. Just show up and try it free.</p>
-      <form class="modal-form" onsubmit="submitModal(event,'modal-trial','⚠️PLACEHOLDER — replace with GHL trial webhook URL before launch')">
+      <form class="modal-form" onsubmit="submitModal(event,'modal-trial','https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/trial')">
         <div class="field"><label for="tr-name">Name</label><input id="tr-name" type="text" name="name" placeholder="Your full name" required autocomplete="name"></div>
         <div class="field"><label for="tr-email">Email</label><input id="tr-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
         <div class="field"><label for="tr-phone">Phone</label><input id="tr-phone" type="tel" name="phone" placeholder="(555) 555-5555" required autocomplete="tel"></div>
@@ -405,7 +417,7 @@
     <div id="modal-kit-body">
       <h2 class="modal-title" id="title-kit">Looking For Our Pricing?</h2>
       <p class="modal-sub">Fill out the form below and one of our coaches will send you our pricing, class schedule, and EXCLUSIVE promo information for our classes.</p>
-      <form class="modal-form" onsubmit="submitModal(event,'modal-kit','⚠️PLACEHOLDER — replace with GHL starter kit webhook URL before launch')">
+      <form class="modal-form" onsubmit="submitModal(event,'modal-kit','https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/kit')">
         <div class="field"><label for="kit-name">Name</label><input id="kit-name" type="text" name="name" placeholder="Your full name" required autocomplete="name"></div>
         <div class="field"><label for="kit-email">Email</label><input id="kit-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
         <div class="field"><label for="kit-phone">Phone</label><input id="kit-phone" type="tel" name="phone" placeholder="(555) 555-5555" required autocomplete="tel"></div>
@@ -445,7 +457,7 @@
     e.preventDefault();var form=e.target,data={};new FormData(form).forEach(function(v,k){data[k]=v});
     var btn=form.querySelector('[type=submit]');btn.textContent='Sending…';btn.disabled=true;
     if(url&&url.charAt(0)!=='[')fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}).catch(function(){});
-    setTimeout(function(){if(mid==='modal-trial'){window.location.href='⚠️PLACEHOLDER — replace with booking calendar URL before launch';}else{var b=document.getElementById(mid+'-body'),s=document.getElementById(mid+'-success');if(b)b.style.display='none';if(s)s.style.display='block';}},550);
+    setTimeout(function(){if(mid==='modal-trial'){window.location.href='https://api.leadconnectorhq.com/widget/group/CAMAL_PLACEHOLDER';}else{var b=document.getElementById(mid+'-body'),s=document.getElementById(mid+'-success');if(b)b.style.display='none';if(s)s.style.display='block';}},550);
   };
 }());
 </script>

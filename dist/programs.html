@@ -14,7 +14,12 @@
     button{cursor:pointer;border:none;outline:none;font-family:inherit}
     ul{list-style:none}
     :root{
-      --blue:#2563eb;--blue-dark:#1d4ed8;--blue-light:#eff6ff;
+      --primary:        #cc0000;
+      --primary-dark:   color-mix(in srgb, #cc0000 80%, black);
+      --secondary:      #0066cc;
+      --secondary-dark: color-mix(in srgb, #0066cc 80%, black);
+      --secondary-light:color-mix(in srgb, #0066cc 15%, white);
+      --red:var(--primary);--red-dark:var(--primary-dark);--blue:var(--secondary);--blue-dark:var(--secondary-dark);--blue-light:var(--secondary-light);
       --dark:#0f172a;--dark-2:#1e293b;--gray:#64748b;
       --gray-light:#e2e8f0;--light:#f8fafc;--white:#ffffff;
       --radius:8px;--radius-lg:12px;
@@ -23,8 +28,8 @@
     }
     .container{max-width:1200px;margin:0 auto;padding:0 24px}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border-radius:var(--radius);font-size:16px;font-weight:700;text-align:center;transition:var(--transition);cursor:pointer;white-space:nowrap}
-    .btn-primary{background:var(--blue);color:var(--white);border:2px solid var(--blue)}
-    .btn-primary:hover{background:var(--blue-dark);border-color:var(--blue-dark);transform:translateY(-2px);box-shadow:var(--shadow)}
+    .btn-primary{background:var(--red);color:var(--white);border:2px solid var(--red)}
+    .btn-primary:hover{background:var(--red-dark);border-color:var(--red-dark);transform:translateY(-2px);box-shadow:var(--shadow)}
     .btn-ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.7)}
     .btn-ghost:hover{background:var(--white);color:var(--dark);transform:translateY(-2px)}
     /* ── Header ── */
@@ -145,8 +150,7 @@
   <div class="container">
     <div class="header-inner">
       <a href="index.html" class="logo" aria-label="Camal &amp; Cruz Judo &amp; Jiu Jitsu Home">
-        <div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L20 8.5v7l-8 4-8-4v-7l8-4.32z"/></svg></div>
-        Camal &amp; Cruz Judo &amp; Jiu Jitsu
+        <img src="brand_assets/logo.png" alt="Camal &amp; Cruz Judo &amp; Jiu Jitsu" height="48" style="height:48px;width:auto;display:block">
       </a>
       <nav id="main-nav" role="navigation" aria-label="Main navigation">
         <a href="#" onclick="openModal('modal-kit');return false">Pricing</a>
@@ -156,8 +160,12 @@
             <a href="program-1.html">Kids Jiu Jitsu &amp; Judo</a>
             <a href="program-2.html">Kids Self Defense</a>
             <a href="program-3.html">Adult Brazilian Jiu Jitsu</a>
+
             <a href="program-4.html">Adult Judo</a>
+
             <a href="program-5.html">CRAWL: Toddler Martial Arts</a>
+
+            
           </div>
         </div>
         <a href="quick-tour.html">Quick Tour</a>
@@ -186,13 +194,13 @@
   <div class="programs-grid">
 
     <article class="prog-card reveal" id="program-1">
-      <img src="images/client-photos/program-1.jpg" alt="Kids Jiu Jitsu &amp; Judo" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover">
+      <img src="images/kids-instructors.jpg" alt="Kids Jiu Jitsu &amp; Judo" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover">
       <div class="prog-body">
-        <span class="prog-tag">Kids Ages 5–12</span>
+        <span class="prog-tag">Ages 5–12</span>
         <h2>Kids Jiu Jitsu &amp; Judo</h2>
-        <p>A combined Jiu Jitsu and Judo program that builds real grappling fundamentals, confidence, discipline, and self-defense skills. Our instructors create a safe, welcoming environment where every child can thrive.</p>
+        <p>Fun, structured Judo &amp; Jiu Jitsu classes that build real confidence, discipline, and self-defense skills. Our instructors create a safe, welcoming environment where every student can thrive.</p>
         <div class="prog-meta">
-          <span>Mon &amp; Wed</span>
+          <span>Tue &amp; Thu</span>
           <span>60-min classes</span>
         </div>
         <a href="program-1.html" class="btn btn-primary">Learn More</a>
@@ -200,26 +208,27 @@
     </article>
 
     <article class="prog-card reveal" id="program-2">
-      <img src="images/client-photos/program-2.jpg" alt="Kids Self Defense" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover">
+      <img src="images/kids-mats.jpg" alt="Kids Self Defense" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover">
       <div class="prog-body">
-        <span class="prog-tag">Kids All Ages</span>
+        <span class="prog-tag">All Ages</span>
         <h2>Kids Self Defense</h2>
-        <p>Practical, real-world self-defense for children. Kids learn awareness, conflict resolution, and how to stay safe — with confidence, not fear. No experience required.</p>
+        <p>Learn Judo &amp; Jiu Jitsu in a structured curriculum with real belt standards. Build self-defense skills, get fit, and train in a welcoming community — no experience required.</p>
         <div class="prog-meta">
-          <span>Flexible scheduling</span>
+          <span>Mon, Wed &amp; Thu</span>
+          <span>60-min classes</span>
         </div>
         <a href="program-2.html" class="btn btn-primary">Learn More</a>
       </div>
     </article>
 
     <article class="prog-card reveal" id="program-3">
-      <img src="images/client-photos/program-3.jpg" alt="Adult Brazilian Jiu Jitsu" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover">
+      <img src="images/group-instructors.jpg" alt="Adult Brazilian Jiu Jitsu" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover">
       <div class="prog-body">
         <span class="prog-tag">Adults All Levels</span>
         <h2>Adult Brazilian Jiu Jitsu</h2>
-        <p>Train Gi and No-Gi under Professor Jamie Cruz — one of Renzo Gracie's first American Black Belts. Classes 7 days a week, including early bird sessions Tue &amp; Thu at 6:30 AM. Beginner to advanced.</p>
+        <p>Develop real Judo &amp; Jiu Jitsu skills, build strength and focus, and train alongside a welcoming community — no prior experience needed.</p>
         <div class="prog-meta">
-          <span>Mon–Sun</span>
+          <span>7 days a week</span>
           <span>60–90 min classes</span>
         </div>
         <a href="program-3.html" class="btn btn-primary">Learn More</a>
@@ -227,11 +236,11 @@
     </article>
 
     <article class="prog-card reveal" id="program-4">
-      <img src="images/client-photos/program-4.jpg" alt="Adult Judo" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover">
+      <img src="images/about-photo.jpg" alt="Adult Judo" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover">
       <div class="prog-body">
         <span class="prog-tag">Adults All Levels</span>
         <h2>Adult Judo</h2>
-        <p>Olympic-lineage Judo instruction with competitive tracks for all levels. From Peewee Judo for young beginners to Senior competition — a structured path for every student.</p>
+        <p>Take your training to the next level with focused coaching, real competition prep, and a team that pushes you to perform your best.</p>
         <div class="prog-meta">
           <span>Tue, Thu &amp; Sat</span>
           <span>60–90 min classes</span>
@@ -241,11 +250,11 @@
     </article>
 
     <article class="prog-card reveal" id="program-5">
-      <img src="images/client-photos/program-5.jpg" alt="CRAWL: Toddler Martial Arts" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover">
+      <img src="images/crawl-kids.jpg" alt="CRAWL: Toddler Martial Arts" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover">
       <div class="prog-body">
-        <span class="prog-tag">Toddlers Ages 2–4</span>
+        <span class="prog-tag">Ages 2–4</span>
         <h2>CRAWL: Toddler Martial Arts</h2>
-        <p>CRAWL stands for Confidence, Respect, Awareness, Willpower, and Leadership. A unique parent-led toddler program that builds character and coordination through fun, age-appropriate martial arts activities.</p>
+        <p>A specialized Judo &amp; Jiu Jitsu program designed to challenge and inspire students at every stage of their journey.</p>
         <div class="prog-meta">
           <span>Wed &amp; Sat</span>
           <span>45-min sessions</span>
@@ -253,6 +262,8 @@
         <a href="program-5.html" class="btn btn-primary">Learn More</a>
       </div>
     </article>
+
+    
 
   </div>
 </section>
@@ -270,7 +281,7 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="index.html" class="logo" aria-label="Camal &amp; Cruz Judo &amp; Jiu Jitsu Home">
-        <div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L20 8.5v7l-8 4-8-4v-7l8-4.32z"/></svg></div>
+        <img src="brand_assets/logo.png" alt="Camal &amp; Cruz Judo &amp; Jiu Jitsu logo" style="height:36px;width:auto" onerror="this.style.display='none'">
         Camal &amp; Cruz Judo &amp; Jiu Jitsu
       </a>
       <p>Camal &amp; Cruz Judo &amp; Jiu Jitsu is Totowa's premier martial arts academy. We develop champions on and off the mats through world-class instruction and a supportive community.</p>
@@ -286,9 +297,13 @@
       <ul>
         <li><a href="programs.html#program-1">Kids Jiu Jitsu &amp; Judo</a></li>
         <li><a href="programs.html#program-2">Kids Self Defense</a></li>
-        <li><a href="programs.html#program-3">Adult Brazilian Jiu Jitsu</a></li>
-        <li><a href="programs.html#program-4">Adult Judo</a></li>
-        <li><a href="programs.html#program-5">CRAWL: Toddler Martial Arts</a></li>
+        <li><a href="program-3.html">Adult Brazilian Jiu Jitsu</a></li>
+
+        <li><a href="program-4.html">Adult Judo</a></li>
+
+        <li><a href="program-5.html">CRAWL: Toddler Martial Arts</a></li>
+
+        
       </ul>
     </div>
     <div class="footer-col">
@@ -310,12 +325,12 @@
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>266 Union Blvd<br>Totowa, NJ 07512</div>
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><a href="tel:(973) 256-0110">(973) 256-0110</a></div>
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:info@camalandcruz.com">info@camalandcruz.com</a></div>
-        <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>Mon–Sun (see full schedule)</div>
+        <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>Mon–Sun</div>
       </address>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 1996 Camal &amp; Cruz Judo &amp; Jiu Jitsu. All rights reserved.</p>
+    <p>© 2026 Camal &amp; Cruz Judo &amp; Jiu Jitsu. All rights reserved.</p>
     <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div>
   </div>
 </footer>
@@ -327,7 +342,7 @@
     <div id="modal-trial-body">
       <h2 class="modal-title" id="title-trial">Book Your Free Trial Today</h2>
       <p class="modal-sub">No commitment. No experience needed. Just show up and try it free.</p>
-      <form class="modal-form" onsubmit="submitModal(event,'modal-trial','⚠️PLACEHOLDER — replace with GHL trial webhook URL before launch')">
+      <form class="modal-form" onsubmit="submitModal(event,'modal-trial','https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/trial')">
         <div class="field"><label for="tr-name">Name</label><input id="tr-name" type="text" name="name" placeholder="Your full name" required autocomplete="name"></div>
         <div class="field"><label for="tr-email">Email</label><input id="tr-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
         <div class="field"><label for="tr-phone">Phone</label><input id="tr-phone" type="tel" name="phone" placeholder="(555) 555-5555" required autocomplete="tel"></div>
@@ -347,7 +362,7 @@
     <div id="modal-kit-body">
       <h2 class="modal-title" id="title-kit">Looking For Our Pricing?</h2>
       <p class="modal-sub">Fill out the form below and one of our coaches will send you our pricing, class schedule, and EXCLUSIVE promo information for our classes.</p>
-      <form class="modal-form" onsubmit="submitModal(event,'modal-kit','⚠️PLACEHOLDER — replace with GHL starter kit webhook URL before launch')">
+      <form class="modal-form" onsubmit="submitModal(event,'modal-kit','https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/kit')">
         <div class="field"><label for="kit-name">Name</label><input id="kit-name" type="text" name="name" placeholder="Your full name" required autocomplete="name"></div>
         <div class="field"><label for="kit-email">Email</label><input id="kit-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
         <div class="field"><label for="kit-phone">Phone</label><input id="kit-phone" type="tel" name="phone" placeholder="(555) 555-5555" required autocomplete="tel"></div>
@@ -387,7 +402,7 @@
     e.preventDefault();var form=e.target,data={};new FormData(form).forEach(function(v,k){data[k]=v});
     var btn=form.querySelector('[type=submit]');btn.textContent='Sending…';btn.disabled=true;
     if(url&&url.charAt(0)!=='[')fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}).catch(function(){});
-    setTimeout(function(){if(mid==='modal-trial'){window.location.href='⚠️PLACEHOLDER — replace with booking calendar URL before launch';}else{var b=document.getElementById(mid+'-body'),s=document.getElementById(mid+'-success');if(b)b.style.display='none';if(s)s.style.display='block';}},550);
+    setTimeout(function(){if(mid==='modal-trial'){window.location.href='https://api.leadconnectorhq.com/widget/group/CAMAL_PLACEHOLDER';}else{var b=document.getElementById(mid+'-body'),s=document.getElementById(mid+'-success');if(b)b.style.display='none';if(s)s.style.display='block';}},550);
   };
 }());
 </script>
