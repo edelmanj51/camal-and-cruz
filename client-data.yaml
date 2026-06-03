@@ -18,7 +18,7 @@ SECONDARY_COLOR: "#0066cc"
 LOGO_IMAGE: brand_assets/logo.png
 FACEBOOK_URL: https://www.facebook.com/camalandcruz
 INSTAGRAM_URL: https://www.instagram.com/camalandcruz
-HERO_IMAGE: images/hero/hero-real.jpg
+HERO_IMAGE: images/hero/hero.jpg
 HERO_HEADLINE: "Totowa&#x2019;s Premier Judo &amp; Brazilian Jiu Jitsu Academy"
 HERO_SUBHEADLINE: "Train Under One of Renzo Gracie&#x2019;s First American Black Belts"
 HERO_SUBTEXT: "Reserve your free trial class &#x2014; all ages and levels welcome, no experience needed."
@@ -37,6 +37,11 @@ INSTRUCTOR_2_NAME: "Tony Camal"
 INSTRUCTOR_2_PHOTO: images/instructor/tony-camal.png
 INSTRUCTOR_2_TITLE: "Co-Founder &amp; 6th Dan Judo Black Belt (1961&#x2013;2024)"
 INSTRUCTOR_2_BIO: "Anthony &#x201C;Tony&#x201D; Camal began his Judo journey in 1967 at age six, eventually becoming a Junior Olympic National Champion (1978), High School National Champion (1979), and three-time Senior National medalist. He opened Camal Judo in 1996, building it into one of New Jersey&#x2019;s most decorated Judo academies &#x2014; producing dozens of Junior National Champions, over 10 Senior National medal winners, and 30+ black belts. A career firefighter promoted to Captain, Tony was named USA Judo Amateur Coach of the Year by the U.S. Olympic Committee in 2014. Sensei Camal passed away on July 29, 2024. His legacy endures in every student he trained and in the academy that bears his name."
+INSTRUCTOR_3_NAME: "Chris Skelly"
+# Real headshot — downloaded from camalandcruz.com.
+INSTRUCTOR_3_PHOTO: images/instructor/chris-skelly.jpg
+INSTRUCTOR_3_TITLE: "Head Judo Instructor"
+INSTRUCTOR_3_BIO: "Chris Skelly stepped into the role of Head Judo Instructor following the passing of his Sensei, Anthony &#x201C;Tony&#x201D; Camal, in 2024. Trained directly under Sensei Camal, Chris carries forward the same rigorous technical standards and competitive spirit that made Camal Judo one of the most decorated academies in New Jersey. He is committed to honoring his Sensei&#x2019;s legacy by continuing to develop the next generation of Judo champions at Camal &amp; Cruz."
 
 # ── Programs ─────────────────────────────────────────────────────────────────
 PROGRAM_1_AUDIENCE_TEENS: "1"
@@ -47,7 +52,7 @@ PROGRAM_5_AUDIENCE_KIDS: "1"
 
 PROGRAM_1_NAME: "Kids Jiu Jitsu &amp; Judo"
 # PLACEHOLDER — replace with client photo of kids class.
-PROGRAM_1_PHOTO: images/programs/program-1/kids-instructors.jpg
+PROGRAM_1_PHOTO: images/programs/program-1/kids-class.jpg
 PROGRAM_1_AGE_RANGE: "Ages 5–12"
 PROGRAM_1_DAYS: "Tue &amp; Thu"
 PROGRAM_1_SESSION_LEN: "60-min classes"
@@ -55,7 +60,7 @@ PROGRAM_1_DESCRIPTION: "A combined Jiu Jitsu and Judo program that builds real g
 
 PROGRAM_2_NAME: "Kids Self Defense"
 # PLACEHOLDER — replace with client photo of kids self-defense class.
-PROGRAM_2_PHOTO: images/programs/program-2/kids-mats.jpg
+PROGRAM_2_PHOTO: images/programs/program-2/kids-self-defense.jpg
 PROGRAM_2_AGE_RANGE: "All Ages"
 PROGRAM_2_DAYS: "Mon, Wed &amp; Thu"
 PROGRAM_2_SESSION_LEN: "60-min classes"
@@ -71,7 +76,7 @@ PROGRAM_3_DESCRIPTION: "Train Gi and No-Gi under Professor Jamie Cruz &#x2014; o
 
 PROGRAM_4_NAME: "Adult Judo"
 # PLACEHOLDER — replace with client photo of judo class.
-PROGRAM_4_PHOTO: images/programs/program-4/about-photo.jpg
+PROGRAM_4_PHOTO: images/programs/program-4/adult-judo.jpg
 PROGRAM_4_AGE_RANGE: "Adults All Levels"
 PROGRAM_4_DAYS: "Tue, Thu &amp; Sat"
 PROGRAM_4_SESSION_LEN: "60–90 min classes"
