@@ -10,7 +10,7 @@ ADDRESS_LINE_1: "266 Union Blvd"
 PHONE: "(973) 256-0110"
 EMAIL: info@camalandcruz.com
 HOURS: "Mon–Sun (see full schedule)"
-HOURS_SHORT: "Mon–Sun"
+DAYS_OPEN: "Mon–Sun"
 YEAR_FOUNDED: "1996"
 # NOTE: YEARS_COUNT is computed automatically from YEAR_FOUNDED — do NOT set manually.
 PRIMARY_COLOR: "#cc0000"
