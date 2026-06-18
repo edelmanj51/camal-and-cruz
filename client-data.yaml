@@ -97,11 +97,11 @@ CLASS_SCHEDULE_HTML: "<table class=\"sched\" role=\"table\" aria-label=\"Weekly 
 
 # ── Webhooks ─────────────────────────────────────────────────────────────────
 # NOTE: All webhook/calendar URLs below are PLACEHOLDER values — replace with actual GHL URLs before launch.
-TRIAL_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/trial
-STARTER_KIT_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/kit
-QUIZ_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/quiz
-FINAL_CTA_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/CAMAL_PLACEHOLDER/webhook-trigger/final
-BOOKING_CALENDAR_URL: https://api.leadconnectorhq.com/widget/group/CAMAL_PLACEHOLDER
+TRIAL_WEBHOOK_URL: "https://services.leadconnectorhq.com/hooks/g9I7bO2EEwIP0qsFy9UT/webhook-trigger/HMzcSwZK7Y4hbwRkyMJQ"
+STARTER_KIT_WEBHOOK_URL: "https://services.leadconnectorhq.com/hooks/g9I7bO2EEwIP0qsFy9UT/webhook-trigger/HMzcSwZK7Y4hbwRkyMJQ"
+QUIZ_WEBHOOK_URL: "https://services.leadconnectorhq.com/hooks/g9I7bO2EEwIP0qsFy9UT/webhook-trigger/HMzcSwZK7Y4hbwRkyMJQ"
+FINAL_CTA_WEBHOOK_URL: "https://services.leadconnectorhq.com/hooks/g9I7bO2EEwIP0qsFy9UT/webhook-trigger/HMzcSwZK7Y4hbwRkyMJQ"
+BOOKING_CALENDAR_URL: "https://api.leadconnectorhq.com/widget/group/C0YiIjmURgaMhwoSUasJ"
 PRIVACY_POLICY_URL: https://camalandcruz.com/privacy-policy
 
 # ── Reviewers ────────────────────────────────────────────────────────────────
